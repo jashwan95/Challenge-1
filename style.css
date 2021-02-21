@@ -1,0 +1,13 @@
+@font-face{ 
+	font-family: timeburner;
+	src: url("timeburnerbold-pegr-webfont.woff");
+}
+
+body {
+    font-family: timeburner;
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+}
