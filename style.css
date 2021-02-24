@@ -5,9 +5,58 @@
 
 body {
     font-family: timeburner;
-    background-color: bisque;
+    color: #ffffff;
+    background-image: url("space.jpg");
+    background-size: auto 812px;
 }
 
 h1 {
     text-align: center;
+}
+
+.witte-achtergrond {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0 20px 20px 20px;
+}
+h2 {
+    margin: 0;
+}
+
+span {
+    font-size: 0.75em;
+}
+
+button {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #ffffff;
+    border-radius: 20%;
+}
+
+#snelheidsbalk {
+    position: relative;
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+    }
+    
+    #balk {
+    background-color: red;
+    width: 0px;
+    height: 20px;
+    }
+
+@media only screen and (min-width: 833px) and (max-width: 1365px) {
+
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1919px) {
+    
+}
+
+@media only screen and (min-width: 1920px) {
+
 }
