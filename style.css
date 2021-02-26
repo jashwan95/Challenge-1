@@ -29,28 +29,35 @@ span {
 }
 
 button {
+    font-family: timeburner;
     font-size: 20px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #ffffff;
-    border-radius: 20%;
+    border-radius: 50%;
+}
+#opslaan {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
 }
 
 #snelheidsbalk {
     position: relative;
     background-color: black;
+    border: 2px solid #ffffff;
     margin: 0;
     overflow: hidden;
-    }
+}
     
-    #balk {
-    background-color: red;
+#balk {
+    background-color: #88DFFF;
     width: 0px;
     height: 20px;
-    }
+}
 
 @media only screen and (min-width: 833px) and (max-width: 1365px) {
-
+    
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1919px) {

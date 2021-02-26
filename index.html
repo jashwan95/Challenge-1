@@ -15,13 +15,9 @@
                 <span>(min 100 - max 500)</span>
             </h2>
             <button type="button" id="min_mensen">-</button>
-            <input type="number" min="100" max="500" id="aantal_mensen">
+            <input type="number" min="100" max="500" value="100" id="aantal_mensen">
             <button type="button" id="plus_mensen">+</button>
-        </div>
-        
-        <!-- pie chart-->
-        <div class="witte-achtergrond">            
-            <canvas id="pieChart"></canvas>
+            <button type="button" id="opslaan">opslaan</button>
         </div>
 
         <!-- bar chart-->
@@ -31,8 +27,13 @@
             <div id="snelheidsbalk">
                 <div id="balk"></div>
             </div> 
-            <p id="speed"> nog niet ingevuld </p>          
+            <p id="water"> nog niet ingevuld </p>          
         </div>
+        
+        <!-- pie chart-->
+        <div class="witte-achtergrond">            
+            <canvas id="pieChart"></canvas>
+        </div>        
 
         <!-- line chart-->
         <div class="witte-achtergrond">
@@ -42,12 +43,8 @@
             <canvas id="lineChart"></canvas>
         </div>
 
-
-        
-        
-
         <!-- script in <body> omdat het niet werkt in de <head> -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>                    
         <script src="script.js"></script>
     </body>
 </html>
