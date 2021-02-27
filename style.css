@@ -8,10 +8,33 @@ body {
     color: #ffffff;
     background-image: url("space.jpg");
     background-size: auto 812px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+  
+    grid-template-areas: 
+          "title"
+          "mensen"
+          "bar"
+          "pie"
+          "line";
 }
 
 h1 {
+    grid-area: title;
     text-align: center;
+}
+.aantal-mensen {
+    grid-area: mensen;
+}
+.bar-chart {
+    grid-area: bar;
+}
+.pie-chart {
+    grid-area: pie;
+}
+.line-chart {
+    grid-area: line;
 }
 
 .witte-achtergrond {
@@ -57,13 +80,39 @@ button {
 }
 
 @media only screen and (min-width: 833px) and (max-width: 1365px) {
-    
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      
+        grid-template-areas: 
+              "title title"
+              "mensen bar"
+              "pie pie"
+              "line line";    
+    }
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1919px) {
-    
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      
+        grid-template-areas: 
+              "title title"
+              "mensen bar"
+              "pie line";    
+    }
 }
 
 @media only screen and (min-width: 1920px) {
-
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      
+        grid-template-areas: 
+              "title title title"
+              "mensen pie pie"
+              "bar pie pie"
+              "line line line";    
+    }
 }
