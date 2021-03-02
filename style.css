@@ -1,4 +1,4 @@
-@font-face{ 
+@font-face { 
 	font-family: timeburner;
 	src: url("timeburnerbold-pegr-webfont.woff");
 }
@@ -8,16 +8,6 @@ body {
     color: #ffffff;
     background-image: url("space.jpg");
     background-size: auto 812px;
-
-    display: grid;
-    grid-template-columns: 1fr;
-  
-    grid-template-areas: 
-          "title"
-          "mensen"
-          "bar"
-          "pie"
-          "line";
 }
 
 h1 {
@@ -27,8 +17,11 @@ h1 {
 .aantal-mensen {
     grid-area: mensen;
 }
-.bar-chart {
+.bar-chart-water {
     grid-area: bar;
+}
+.bar-chart-gas {
+    grid-area: gas;
 }
 .pie-chart {
     grid-area: pie;
@@ -65,7 +58,7 @@ button {
     margin-top: 10px;
 }
 
-#snelheidsbalk {
+#waterbalk {
     position: relative;
     background-color: black;
     border: 2px solid #ffffff;
@@ -86,9 +79,9 @@ button {
       
         grid-template-areas: 
               "title title"
-              "mensen bar"
-              "pie pie"
-              "line line";    
+              "mensen line"
+              "bar line"
+              "pie gas";    
     }
 }
 
@@ -100,7 +93,8 @@ button {
         grid-template-areas: 
               "title title"
               "mensen bar"
-              "pie line";    
+              "pie line"
+              "gas gas";    
     }
 }
 
@@ -111,8 +105,8 @@ button {
       
         grid-template-areas: 
               "title title title"
-              "mensen pie pie"
-              "bar pie pie"
-              "line line line";    
+              "mensen gas line"
+              "bar gas line"
+              "pie gas line";    
     }
 }

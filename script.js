@@ -1,61 +1,5 @@
-Chart.defaults.global.defaultFontColor = '#FFFFFF'
-Chart.defaults.global.defaultFontFamily = 'timeburner'
-
-/*pie chart*/
-var pie = document.getElementById('pieChart').getContext('2d');
-var chart = new Chart(pie, {
-    // The type of chart we want to create
-    type: 'pie',
-
-    // The data for our dataset
-    data: {
-        labels: ['Man', 'Vrouw', 'Kind', 'Dier'],
-        datasets: [{
-            data: [48, 42, 28, 13],
-            backgroundColor: ['#A4C0F6', '#EDB7EF', '#86CF86', '#E9A876']
-        }]
-    },
-
-    // Configuration options go here
-    options: {
-        legend: {
-            labels: {
-                fontColor: '#FFFFFF',
-                fontFamily: 'timeburner'
-            }
-        }
-    }
-});
-
-/*line chart*/
-var line = document.getElementById('lineChart').getContext('2d');
-var chart = new Chart(line, {
-    // The type of chart we want to create
-    type: 'line',
-
-    // The data for our dataset
-    data: {
-        labels: ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug'],
-        datasets: [{
-            label: 'Afgelegde afstand',
-            borderColor: '#FF0000',
-            data: [0, 32, 53, 94, 110, 149, 166, 205]
-        }]
-    },
-
-    // Configuration options go here
-    options: {
-        legend: {
-            labels: {
-                fontColor: '#FFFFFF',
-                fontFamily: 'timeburner'
-            }
-        },
-        tooltips: {
-            bodyFontFamily: 'timeburner'
-        }
-    }
-});
+Chart.defaults.global.defaultFontColor = '#FFFFFF';
+Chart.defaults.global.defaultFontFamily = 'timeburner';
 
 /*aantal mensen + water*/
 var m = 100;
@@ -119,4 +63,95 @@ document.getElementById('opslaan').onclick = function(){
     };
 };
 
+/*pie chart*/
+var pie = document.getElementById('pieChart').getContext('2d');
+var chart = new Chart(pie, {
+    // The type of chart we want to create
+    type: 'pie',
+
+    // The data for our dataset
+    data: {
+        labels: ['Man', 'Vrouw', 'Kind', 'Dier'],
+        datasets: [{
+            data: [48, 42, 28, 13],
+            backgroundColor: ['#A4C0F6', '#EDB7EF', '#86CF86', '#E9A876']
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+        legend: {
+            position: 'left'
+        }
+    }
+});
+
+/*line chart*/
+var line = document.getElementById('lineChart').getContext('2d');
+var chart = new Chart(line, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug'],
+        datasets: [{
+            label: 'Afgelegde afstand',
+            borderColor: '#FF0000',
+            data: [0, 32, 53, 94, 110, 149, 166, 205],
+            lineTension: 0
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    display: false
+                }
+            }],
+            yAxes: [{
+                gridLines: {
+                    color: 'white'
+                }
+            }]
+        }
+    }
+});
+
+
+
+/*bar-gas chart*/
+var bar = document.getElementById('gasChart').getContext('2d');
+var chart = new Chart(bar, {
+    // The type of chart we want to create
+    type: 'horizontalBar',
+
+    // The data for our dataset
+    data: {
+        labels: ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug'],
+        datasets: [{
+            label: 'brandstof',
+            data: [100, 90, 85, 70, 50, 35, 20, 10, 0],
+            backgroundColor: ['#69B34C', '#8DB446', '#B2B540', '#D6B639', '#FAB733', '#FC7E26', '#FD461A', '#FF0D0D']
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    color: 'white'
+                }
+            }],
+            yAxes: [{
+                gridLines: {
+                    display: false
+                }
+            }]
+        }
+    }
+});
 

@@ -20,11 +20,11 @@
             <button type="button" id="opslaan">opslaan</button>
         </div>
 
-        <!-- bar chart-->
-        <div class="bar-chart witte-achtergrond">
+        <!-- bar-water chart-->
+        <div class="bar-chart-water witte-achtergrond">
             <h2>Benodigd water <span>(in liters)</span>
             </h2> 
-            <div id="snelheidsbalk">
+            <div id="waterbalk">
                 <div id="balk"></div>
             </div> 
             <p id="water"> nog niet ingevuld </p>          
@@ -41,6 +41,14 @@
                 <span>(in miljoen km)</span>
             </h2>
             <canvas id="lineChart"></canvas>
+        </div>
+
+        <!-- bar-gas chart-->
+        <div class="bar-chart-gas witte-achtergrond">
+            <h2>Brandstof in tank<br>
+                <span>(in %)</span>
+            </h2>
+            <canvas id="gasChart"></canvas>
         </div>
 
         <!-- script in <body> omdat het niet werkt in de <head> -->
