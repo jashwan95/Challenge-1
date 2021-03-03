@@ -1,13 +1,13 @@
 Chart.defaults.global.defaultFontColor = '#FFFFFF';
 Chart.defaults.global.defaultFontFamily = 'timeburner';
 
-/*aantal mensen + water*/
+/*----- aantal mensen + water -----*/
 var m = 100;
 
 document.getElementById('water').innerHTML = m * 111;
 document.getElementById('balk').style.width = (m / 5) + '%';
 
-document.getElementById('min_mensen').onclick = function(){
+document.getElementById('min_mensen').onclick = function(){ // de min knop om aantal mensen af te trekken en op te slaan in js
     var m = document.getElementById('aantal_mensen').value;
     if (m > 100) {
         m--
@@ -25,7 +25,7 @@ document.getElementById('min_mensen').onclick = function(){
     };
 }
 
-document.getElementById('plus_mensen').onclick = function(){
+document.getElementById('plus_mensen').onclick = function(){ // de plus knop om aantal mensen op te tellen en op te slaan in js
     var m = document.getElementById('aantal_mensen').value;
     if (m < 500) {
         m++
@@ -43,7 +43,7 @@ document.getElementById('plus_mensen').onclick = function(){
     };
 }
 
-document.getElementById('opslaan').onclick = function(){
+document.getElementById('opslaan').onclick = function(){ // opslaan knop om zelf waarde in te invoeren en op te slaan in js
     var m = document.getElementById('aantal_mensen').value;
     if (m < 100) {
         alert('Het minimum is 100 mensen. Er moeten meer mensen vliegen!')
@@ -63,7 +63,7 @@ document.getElementById('opslaan').onclick = function(){
     };
 };
 
-/*pie chart*/
+/*----- pie chart -----*/
 var pie = document.getElementById('pieChart').getContext('2d');
 var chart = new Chart(pie, {
     // The type of chart we want to create
@@ -86,7 +86,7 @@ var chart = new Chart(pie, {
     }
 });
 
-/*line chart*/
+/*----- line chart -----*/
 var line = document.getElementById('lineChart').getContext('2d');
 var chart = new Chart(line, {
     // The type of chart we want to create
@@ -113,16 +113,14 @@ var chart = new Chart(line, {
             }],
             yAxes: [{
                 gridLines: {
-                    color: 'white'
+                    color: '#DEDEDE'
                 }
             }]
         }
     }
 });
 
-
-
-/*bar-gas chart*/
+/*----- bar-gas chart -----*/
 var bar = document.getElementById('gasChart').getContext('2d');
 var chart = new Chart(bar, {
     // The type of chart we want to create
@@ -143,7 +141,7 @@ var chart = new Chart(bar, {
         scales: {
             xAxes: [{
                 gridLines: {
-                    color: 'white'
+                    color: '#FFFFFF'
                 }
             }],
             yAxes: [{
@@ -154,4 +152,3 @@ var chart = new Chart(bar, {
         }
     }
 });
-

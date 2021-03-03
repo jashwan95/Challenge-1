@@ -5,7 +5,7 @@
 
 body {
     font-family: timeburner;
-    color: #ffffff;
+    color: #FFFFFF;
     background-image: url("space.jpg");
     background-size: auto 812px;
 }
@@ -31,7 +31,7 @@ h1 {
 }
 
 .witte-achtergrond {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1); /* rgba om opacity in te stellen */
     padding: 20px;
     border-radius: 15px;
     margin: 0 20px 20px 20px;
@@ -47,9 +47,9 @@ span {
 button {
     font-family: timeburner;
     font-size: 20px;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #ffffff;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5); /* rgba om opacity in te stellen */
+    border: 2px solid #FFFFFF;
     border-radius: 50%;
 }
 #opslaan {
@@ -60,8 +60,8 @@ button {
 
 #waterbalk {
     position: relative;
-    background-color: black;
-    border: 2px solid #ffffff;
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
     margin: 0;
     overflow: hidden;
 }
@@ -72,7 +72,7 @@ button {
     height: 20px;
 }
 
-@media only screen and (min-width: 833px) and (max-width: 1365px) {
+@media only screen and (min-width: 834px) and (max-width: 1365px) {
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
